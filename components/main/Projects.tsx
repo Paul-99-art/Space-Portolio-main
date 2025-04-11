@@ -12,13 +12,16 @@ const Projects = () => {
         My Projects
       </h1>
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
-      <Link href="https://jsm-mock-interview-platform-nine.vercel.app">
-  <ProjectCard
-    src="/NextWebsite.png"
-    title="MockMate - AI Interview Prep"
-    description="MockMate is an interview preparation application with AI voice assistants that streamlines the interview practice process."
-  />
-</Link>
+  <Link href="https://jsm-mock-interview-platform-nine.vercel.app" passHref legacyBehavior>
+    <a className="cursor-pointer"> {/* Add styles to make it clear this is clickable */}
+      <ProjectCard
+        src="/NextWebsite.png"
+        title="MockMate - AI Interview Prep"
+        description="MockMate is an interview preparation application with AI voice assistants that streamlines the interview practice process."
+      />
+    </a>
+  </Link>
+</div>
         {/* <ProjectCard
           src="/CardImage.png"
           title="Interactive Website Cards"
