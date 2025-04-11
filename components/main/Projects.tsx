@@ -21,7 +21,6 @@ const Projects = () => {
       />
     </a>
   </Link>
-</div>
         {/* <ProjectCard
           src="/CardImage.png"
           title="Interactive Website Cards"
